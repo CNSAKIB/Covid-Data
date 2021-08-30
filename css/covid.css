@@ -1,0 +1,32 @@
+/* fonst used  */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap');
+/* styles  */
+body{
+    background: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Kaisei Opti', serif;
+}
+
+body img {
+    opacity: 0.3;
+}
+
+.btn-style{
+    color: aliceblue;
+    background-color: tomato;
+}
+
+#empty-box{
+    display: none;
+}
+#wrong-type{
+    display: none;
+}
+.footer-style{
+    margin-top: 280px;
+}
+.footer-style a {
+    color:tomato;
+    text-decoration: none;
+}
