@@ -4,7 +4,7 @@
 body{
     background: url('../images/background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     font-family: 'Kaisei Opti', serif;
 }
 
@@ -16,7 +16,9 @@ body img {
     color: aliceblue;
     background-color: tomato;
 }
-
+#spinner-display{
+    display: none;
+}
 #empty-box{
     display: none;
 }

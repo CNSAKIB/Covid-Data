@@ -24,12 +24,18 @@
                 aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-style" type="button" id="search-button" onclick="callInfo()">Search</button>
         </div>
+        <p id="initial-display" class="text-center text-white">Please Insert a Country Name</p>
+        <div id="spinner-display" class="text-center">
+            <div class="spinner-grow" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
         <!-- Search box ends  -->
     </section>
     <!-- Error Messages -->
     <section class="text-white text-center">
         <div id="empty-box">
-            <p>Please Insert a Country Name</p>
+            <p>Search Cannot be Empty!</p>
         </div>
         <div id="wrong-type">
             <h4>Sorry! Typed Country not found</h4>

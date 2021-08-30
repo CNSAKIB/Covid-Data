@@ -1,5 +1,5 @@
 const callInfo = () => {
-
+    document.getElementById('initial-display').style.display = 'none';
     const inputFeild = document.getElementById('input-feild');
     const inputValue = inputFeild.value;
     inputFeild.value = ''
@@ -18,6 +18,7 @@ const callInfo = () => {
             .then(res => res.json())
             .then(data => displayInfo(data[data.length - 1]))
             .catch(error => displayError(error));
+        document.getElementById('spinner-display').style.display = 'block'
 
     }
 
@@ -28,9 +29,11 @@ const callInfo = () => {
 }
 
 const displayInfo = data => {
-    document.getElementById('wrong-type').style.display = 'none';
+
     const searchResult = document.getElementById('search-result');
     searchResult.innerText = '';
+    document.getElementById('spinner-display').style.display = 'none';
+    document.getElementById('wrong-type').style.display = 'none';
 
 
     // console.log(data);
