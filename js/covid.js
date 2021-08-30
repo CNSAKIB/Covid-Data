@@ -1,3 +1,14 @@
+// Enter key setting 
+var input = document.getElementById("input-feild");
+input.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("search-button").click();
+    }
+});
+// Enter Key Ends 
+
+
 const callInfo = () => {
     document.getElementById('initial-display').style.display = 'none';
     const inputFeild = document.getElementById('input-feild');
